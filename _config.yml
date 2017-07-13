@@ -1,0 +1,42 @@
+---
+
+port: 4000
+host: 0.0.0.0
+safe: false
+
+
+### site serving configuration ###
+exclude: [CNAME, README.md, .gitignore]
+permalink: / ## disables post output
+timezone: America/New_York
+lsi: false
+markdown: kramdown
+highlighter: pygments
+
+
+### content configuration ###
+title:       "Zionism.is"
+keywords:    "zionism, progressivism, liberal, democrat, zionist"
+description: "Homepage for NYC-based advocacy group."
+source_link: "http://zionism.is"
+favicon:     "icons/favicon.ico"
+touch_icon:  "icons/apple-icon.png"
+google_analytics_key: UA-66673802-1
+
+
+# Site owner
+owner: 
+  name: Zionismiss
+  email: info@zionism.is
+  twitter: Zionismis
+  google:
+    ad-client: 
+    ad-slot: 
+  bio: 
+  avatar: img/logo.jpeg # 160x160 px image for author byline
+
+
+
+kramdown:
+  auto_ids:  false
+
