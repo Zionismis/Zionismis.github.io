@@ -5,8 +5,14 @@
         {% include header.html %} 
     </head>
 
-    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">        
+        <!-- Navigation -->
+        {% include navbar.html %}
+
         {{ content }}
+
+        {% include body_script_tags.html %}
+
     </body>
 
 </html>
