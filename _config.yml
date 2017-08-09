@@ -27,6 +27,7 @@ google_analytics_key: UA-66673802-1
 # Used for Sitemap.xml and your RSS feed
 url: http://zionism.is
 
+baseurl: ""
 
 # Site owner
 owner: 
