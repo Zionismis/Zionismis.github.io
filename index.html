@@ -1,226 +1,41 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="en">
 
-{% include header.html %} 
+<!-- Navigation -->
+{% include navbar.html %}
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Zi Scroller -->
+{% include intro_header.html %}
 
-    <!-- Navigation -->
-    {% include navbar.html %}
+<!-- Section: about -->
+<section id="about" class="home-section text-center bg-gray">
+    {% include section_about.html %}
+</section>
+<!-- /Section: about -->
 
-    <!-- Intro Header -->
-    {% include intro-header.html %}
+<!-- Section: statement -->
+<section id="statement" class="home-section text-center bg-gray">
+    {% include section_statement.html %}
+</section>
+<!-- /Section: statement -->
 
-    <!-- Section: about -->
-    <section id="about" class="home-section text-center bg-gray">
-        <div class="heading-about marginbot-50">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="section-heading">
-                            <h2>Our Story</h2>
-                            <p> <small> <em> "Zionism is an aspiration toward morality and beauty." </em> <br> - Jacob Klatzkin </small> </p>
-                            <p>
-                            {% capture our_story_include %}{% include our-story-writeup.md %}{% endcapture %}
-                            {{ our_story_include | markdownify }}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">  
-        </div>
-    </section>
-    <!-- /Section: about -->
+<!-- Section: blog -->
+<section id="blog" class="home-section text-center bg-gray">
+    {% include section_blog.html %}
+</section>
+<!-- /Section: Blog -->
 
-    <!-- Section: statement -->
-    <section id="statement" class="home-section text-center bg-gray">
-        <div class="heading-about marginbot-50">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="section-heading">
-                            <h2>Statement of Principles</h2>
-                            <p>
-                            {% capture statement_include %}{% include statement-writeup.md %}{% endcapture %}
-                            {{ statement_include | markdownify }}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">  
-        </div>
-    </section>
-    <!-- /Section: statement -->
-
-    <!-- Section: blog -->
-    <section id="blog" class="home-section text-center bg-gray">
-        <div class="heading-works marginbot-50">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="section-heading">
-                            <h2>Blog</h2>
-                            <p>All things zionism</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12" >
-                    <div class="row gallery-item">
-                        <div class="col-md-3">
-                            <a href="img/posts/vilna.jpg" title="This is an image title" data-lightbox-gallery="gallery1">
-                                <img src="img/posts/vilna.jpg" class="img-responsive blur" alt="Self Help for the Jewish People">
-                                <div class="blog-title">
-                                    SELF HELP FOR THE JEWISH PEOPLE
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>  
-        </div>
-    </section>
-    <!-- /Section: Blog -->
-
-
-    <!-- Section: services -->
-    <section id="service" class="home-section text-center">
-
-        <div class="heading-about marginbot-50">
-          <div class="container">
-              <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-
-                  <div class="section-heading">
-                      <h2>FAQ</h2>
-                  </div>
-
-              </div>
-          </div>
-      </div>
-    </div>
-    <div class="container">
-        <div class="row">
-          <div class="col-sm-3 col-md-3">
-
-            <div class="service-box">
-              <div class="service-icon">
-                <i class="fa fa-code fa-3x"></i>
-            </div>
-            <div class="service-desc">
-                <h5>How?</h5>
-                <p>Words, emotions, stories, images, posts, information, love.</p>
-            </div>
-        </div>
-
-    </div>
-    <div class="col-sm-3 col-md-3">
-
-        <div class="service-box">
-          <div class="service-icon">
-            <i class="fa fa-suitcase fa-3x"></i>
-        </div>
-        <div class="service-desc">
-            <h5>Why?</h5>
-            <p>Because it needs to be done.</p>
-        </div>
-    </div>
-
-    </div>
-    <div class="col-sm-3 col-md-3">
-
-        <div class="service-box">
-          <div class="service-icon">
-            <i class="fa fa-cog fa-3x"></i>
-        </div>
-        <div class="service-desc">
-            <h5>When?</h5>
-            <p>Right now. Tomorrow. Forever.</p>
-        </div>
-    </div>
-
-    </div>
-    <div class="col-sm-3 col-md-3">
-
-        <div class="service-box">
-          <div class="service-icon">
-            <i class="fa fa-rocket fa-3x"></i>
-        </div>
-        <div class="service-desc">
-            <h5>Who?</h5>
-            <p>Us. And you too.</p>
-        </div>
-    </div>
-
-    </div>
-    </div>    
-    </div>
-    </section>
-    <!-- /Section: services -->
-
+<!-- Section: services -->
+<section id="faq" class="home-section text-center">
+    {% include section_faq.html %}
+</section>
+<!-- /Section: services -->
 
 <!-- Section: contact -->
 <section id="contact" class="home-section text-center">
-    <div class="heading-contact marginbot-50">
-          <div class="container">
-              <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-
-                  <div class="section-heading">
-                      <h2>Sign Yourself Up</h2>
-                      <p>Put your name down to start our growing movement of Zionist progressives.</p>
-                  </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-<div class="container">
-
-    <div class="row">
-        <div class="col-lg-8 col-md-offset-2">
-
-            {% include email_form.html %}
-
-        <div class="widget-contact row">
-           <div class="col-lg-6">
-            <div class="col-lg-6">
-                <address>
-                  <strong>Email</strong><br>
-                  <a href="mailto:#">info@zionism.is</a><br/>
-              </address>  
-
-          </div>
-      </div>  
-  </div>
-
-</div>
-
-</div>
+    {% include section_contact.html %}
 </section>
 <!-- /Section: contact -->
 
-    <!-- Core JavaScript Files -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>  
-    <script src="js/classie.js"></script>
-    <script src="js/gnmenu.js"></script>
-    <script src="js/jquery.scrollTo.js"></script>
-    <script src="js/nivo-lightbox.min.js"></script>
-    <script src="js/stellar.js"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="js/custom.js"></script>
-
-</body>
-
-</html>
+{% include js_body.html %}

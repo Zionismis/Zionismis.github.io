@@ -1,0 +1,30 @@
+<div class="heading-works marginbot-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="section-heading">
+                    <h2>Blog</h2>
+                    <p>All things zionism</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12" >
+            {% for post in site.posts %}
+            <article class="post">
+                <div class="col-md-3">
+                    <a href="{{ site.baseurl }}{{ post.url }}">
+                        <img src="img/posts/vilna.jpg" class="img-responsive blur" alt="{{ post.title }}">
+                        <div class="blog-title">
+                            {{ post.title }}
+                        </div>
+                    </a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>  
+</div>

@@ -1,0 +1,15 @@
+<div class="heading-about marginbot-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="section-heading">
+                    <h2>Statement of Principles</h2>
+                    <p>
+                    {% capture statement_include %}{% include statement-writeup.md %}{% endcapture %}
+                    {{ statement_include | markdownify }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
