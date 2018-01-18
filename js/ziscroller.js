@@ -1,13 +1,13 @@
 (function() {
-    var MAX_CHARS = 9;
+    var MAX_CHARS = 8;
     var NOUNS = [
     'FAITH',
     'LOVE',
     'JUDAISM',
     'JUSTICE',
     'TRUTH',
-    'SELF-DETERMINATION',
-    'ZACH',
+    // 'SELF-DETERMINATION',
+    // 'ZACH',
     'SALVATION',
     'FREEDOM',
     'FEMINISM',
